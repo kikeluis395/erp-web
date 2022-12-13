@@ -1,0 +1,112 @@
+.select2-search__field:focus {
+  outline: 0; }
+
+/* input,
+textarea {
+  text-transform: uppercase !important; } */
+
+.font-alert {
+  font-size: 12px !important; }
+
+table#tablaOProductos > thead > tr > th[class*="sort"]:before,
+table#tablaOProductos > thead > tr > th[class*="sort"]:after {
+  content: "" !important; }
+
+.dataTables_wrapper .dataTables_processing {
+  background: rgba(10, 74, 169, 0.75);
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  z-index: 9; }
+
+#proveedor_typeahead #proveedor {
+  position: relative; }
+
+#proveedor_typeahead .dropdown-menu {
+  position: absolute;
+  max-height: 150px;
+  overflow-y: auto;
+  width: calc(100% - 45px); }
+
+.repuesto_typeahead .autocompletado {
+  position: relative; }
+
+.repuesto_typeahead .dropdown-menu {
+  max-height: 150px;
+  overflow-y: auto; }
+
+.vehiculo_typeahead .autocompletado2 {
+  position: relative; }
+
+.vehiculo_typeahead .dropdown-menu {
+  max-height: 150px;
+  overflow-y: auto; }
+
+.producto_typeahead .autocompletado3 {
+  position: relative; }
+
+.producto_typeahead .dropdown-menu {
+  max-height: 150px;
+  overflow-y: auto; }
+
+#tablaDetalleOCT td a,
+#tablaDetalleOCOP td a,
+#tablaDetalleOCVN td a {
+  font-weight: normal !important; }
+
+#tablaDetalleOCT tr td,
+#tablaDetalleOCVN tr td,
+#tablaDetalleOCOP tr td {
+  padding: 15px 5px 5px 5px !important; }
+
+#tablaDetalleOCT tbody tr td ul li a,
+#tablaDetalleOCVN tbody tr td ul li a {
+  background-color: transparent !important; }
+
+.datatable-scroll {
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-top: 11px; }
+
+#empresa,
+.almacen_disabled {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+.botom-datatable {
+  margin-top: 20px; }
+
+.fecha {
+  background-color: white !important; }
+
+@media (max-width: 768px) {
+  .pagDT {
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+@media (max-width: 576px) {
+  .infoDT {
+    font-size: 12px; }
+
+  .pagDT {
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+  li.paginate_button.previous {
+    display: inline; }
+
+  li.paginate_button.next {
+    display: inline; }
+
+  li.paginate_button {
+    display: none; } }

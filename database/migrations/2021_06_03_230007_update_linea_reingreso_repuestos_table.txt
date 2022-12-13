@@ -1,0 +1,40 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class UpdateLineaReingresoRepuestosTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+
+        Schema::table('linea_reingreso_repuestos', function (Blueprint $table) {
+            $table->dropColumn('fecha_pedido');
+            $table->dropColumn('fecha_promesa');
+            $table->dropColumn('es_importado');
+            $table->dropColumn('fecha_registro');
+            $table->dropForeign('linea_reingreso_repuestos_id_movimiento_salida_foreign');
+            $table->dropForeign('linea_reingreso_repuestos_id_necesidad_repuestos_foreign');
+            $table->dropColumn('id_movimiento_salida');
+            $table->dropColumn('id_necesidad_repuestos');
+            $table->datetime('fecha_creacion')->useCurrent();
+            $table->unsignedInteger('id_item_necesidad_repuestos')->nullable(false);
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        //
+    }
+}

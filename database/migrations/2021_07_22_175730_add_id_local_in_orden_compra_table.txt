@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class AddIdLocalInOrdenCompraTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::table('orden_compra', function (Blueprint $table) {
+            // $table->unsignedInteger('id_local');
+            //$table->foreign('id_local')->references('id_local')->on('local_empresa');
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::table('orden_compra', function (Blueprint $table) {
+            //
+        });
+    }
+}
